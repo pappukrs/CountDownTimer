@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.btn{
+  padding: 15px;
+  font-size: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+.play{
+  background-color: green;
+
+}
+.pause{
+  background-color: red;
+}
+.reset{
+  background-color: blue;
+}
+.btnsheet{
+  padding: 20px;
+    margin: 10px;
+    font-size: 25px;
+    background: forestgreen;
+    cursor:pointer;
+}
+.bottomsheet-container{
+  position:absolute;
+  background-color: black;
+  left:0;
+  right:0;
+  bottom:0;
+  top:100px;
+  animation-name: bottomsheet-animation;
+  animation-duration: 10s;
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: reverse; */
+  animation-timing-function: ease-in-out;
+}
+@keyframes bottomsheet-animation {
+  0%{border-radius: 30%;margin:0 45%}
+  10%{border-radius: 40%;margin:0 40%}
+  20%{border-radius: 55%;margin:0 35%}
+  30%{border-radius: 60%;margin:0 30%}
+  40%{border-radius: 65%;margin:0 25%}
+  50%{border-radius: 70%;margin:0 20%}
+  60%{border-radius: 75%;margin:0 15%}
+  70%{border-radius: 80%;margin:0 10%}
+  80%{border-radius: 85%;margin:0 5%}
+  90%{border-radius: 90%;margin:0 2%}
+  95%{border-radius: 95%;margin:0 1%}
+  95%{border-radius: 100%;margin:0 0.1%}
+
+
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
